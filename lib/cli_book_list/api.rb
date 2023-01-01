@@ -1,7 +1,7 @@
 require 'pry'
 
 class API
-    # binding.pry
+    binding.pry
     KEY = ENV['API_KEY']
     BASE_URL = "https://www.googleapis.com/books/v1/volumes?key={KEY}"
     # binding.pry
@@ -17,9 +17,11 @@ class API
             title = books['title']
             author = books['author']
             publisher = books['publisher']
+            binding.pry
             BookList.new(title, author, publisher)
             # binding.pry
         end
+        # binding.pry
     end
 end
 

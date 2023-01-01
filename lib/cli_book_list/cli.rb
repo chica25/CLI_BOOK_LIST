@@ -1,10 +1,14 @@
+require 'pry'
+
 class CLI 
    #user and data
    
    def start
-      API.get_books
+      # binding.pry
     puts "Welcome to Google Books!"
     puts "Please enter the book title:"
+    API.get_books
+    binding.pry
     book_title(user_input)
    end
 
