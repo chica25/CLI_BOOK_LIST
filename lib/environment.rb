@@ -4,6 +4,7 @@ require 'HTTParty'
 require 'json'
 require 'open-uri'
 require 'net/http'
+gem 'uri', '~> 0.10.0'
 
 require_relative "./cli_book_list/version"
 
