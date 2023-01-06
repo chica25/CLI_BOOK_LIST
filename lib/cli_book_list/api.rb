@@ -17,7 +17,7 @@ class API
             authors = book['authors']
             publisher = book['publisher']
             # binding.pry
-            BookList.new(id, title, author, publisher)
+            BookList.new(id, title, authors, publisher)
             # binding.pry
         end
         # binding.pry
