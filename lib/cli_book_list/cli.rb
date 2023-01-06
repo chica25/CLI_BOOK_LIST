@@ -1,25 +1,24 @@
-require 'pry'
 
 class CLI 
    #user and data
-   
+  
    def start
       # binding.pry
     puts "Welcome to Google Books!"
-    puts "Please enter the book title:"
-    API.get_books
-    binding.pry
+    puts "Please enter a book title:"
+   #  API.get_books
+   #  binding.pry
     book_title(user_input)
    end
 
    def user_input
-      gets.strip
+      gets.chomp.downcase
    end
 
    def book_title(title)
       puts "Great choice!"
-      puts "Please view the list:"
-      puts "Input 'y' to see the list, 'exit' to leave the library!"
+      # puts "Please view the list:"
+      puts "Enter 'y' to see the list, or 'exit' to leave the library!"
       menu
    end
 
@@ -28,8 +27,8 @@ class CLI
    end
 
    def invalid
-      puts "Please try again"
-      menu
+       puts "Please try again"
+       menu
    end
 
    def book_selection
@@ -39,10 +38,11 @@ class CLI
    def menu
       select = user_input
 
-         if select == 'y'
+         if select == "y" || select == "Y"
             #print book selection
-            book_list
-            menu
+            # book_list
+            # menu
+            puts "test"
          elsif select == 'exit'
             #give the user a goodbye message
             goodbye

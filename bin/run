@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+# require 'pry'
+# require 'HTTParty'
+# require 'json'
+
+require_relative '../lib/environment.rb'
+# require_relative '../lib/api'
+# require_relative '../lib/book_list'
+# require_relative '../lib/cli'
+
+# cli = CLI.new
+#cli.start
+
+CLI.new.start

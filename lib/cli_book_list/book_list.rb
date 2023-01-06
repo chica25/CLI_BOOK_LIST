@@ -1,10 +1,14 @@
+# require 'pry'
+
 class BookList 
+   
     @@all = []
 
-    attr_accessor :title, :author, :publisher
+    attr_accessor :id, :title, :author, :publisher
     
 
-    def initialize(title, author, publisher)
+    def initialize(id, title, author, publisher)
+        @id = id
         @title = title
         @author = author
         @publisher = publisher

@@ -6,3 +6,5 @@
 /pkg/
 /spec/reports/
 /tmp/
+.env
+my_notes.md
