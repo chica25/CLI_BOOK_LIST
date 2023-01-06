@@ -7,8 +7,7 @@ class API
 
     def self.get_books
         #  binding.pry
-        url = BASE_URL
-        uri = URI.parse(url)
+        uri = URI.parse(BASE_URL)
         response = Net::HTTP.get_response(uri)
         json = JSON.parse(response.body)
         # binding.pry
