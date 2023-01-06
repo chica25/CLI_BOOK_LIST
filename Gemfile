@@ -8,3 +8,4 @@ gem 'json'
 gem 'rest-client'
 gem 'dotenv', '~> 2.1', '>= 2.1.1'
 gem "httparty"
+gem 'uri', '~> 0.10.0'

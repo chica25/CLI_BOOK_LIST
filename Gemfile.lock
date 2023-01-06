@@ -31,6 +31,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
+    uri (0.10.1)
 
 PLATFORMS
   x86_64-darwin-19
@@ -42,6 +43,7 @@ DEPENDENCIES
   pry (~> 0.14.1)
   rake (~> 13.0)
   rest-client
+  uri (~> 0.10.0)
 
 BUNDLED WITH
    2.2.23
