@@ -5,7 +5,7 @@ class CLI
    def start
       # binding.pry
     puts "Welcome to Google Books!"
-    puts "Please enter a book title:"
+   #  puts "Please enter a book title:"
     API.get_books
    #  binding.pry
     book_title(user_input)
@@ -19,7 +19,7 @@ class CLI
       puts "Great choice!"
       # puts "Please view the list:"
       puts "Enter 'y' to see the list, or 'exit' to leave the library!"
-      menu
+      # menu
    end
 
    def goodbye
@@ -40,7 +40,7 @@ class CLI
 
          if select == "y" || select == "Y"
             #print book selection
-            book_list
+            # book_list
             # menu
             puts "test"
          elsif select == 'exit'
