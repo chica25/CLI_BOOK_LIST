@@ -2,6 +2,8 @@
 require 'pry'
 require 'HTTParty'
 require 'json'
+require 'open-uri'
+require 'net/http'
 
 require_relative "./cli_book_list/version"
 
