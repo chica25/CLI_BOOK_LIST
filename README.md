@@ -1,4 +1,4 @@
-CLI Book List
+### CLI Book List
 Welcome to my CLI application! You'll get an overview of the Google Books list. You'll have several options to get detail information based on the book title you search for.
 
 ## Installation
