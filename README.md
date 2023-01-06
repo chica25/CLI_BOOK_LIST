@@ -1,35 +1,31 @@
-# CliBookList
+CLI Book List
+Welcome to my CLI application! You'll get an overview of the Google Books list. You'll have several options to get detail information based on the book title you search for.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cli_book_list`. To experiment with that code, run `bin/console` for an interactive prompt.
+Installation
+Please make sure you have the following gems on your gemfile:
 
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'cli_book_list'
-```
+gem "rake", "~> 13.0"
+gem 'pry', '~> 0.14.1'
+gem 'json'
+gem 'rest-client'
+gem 'dotenv', '~> 2.1', '>= 2.1.1'
+gem "httparty"
 
 And then execute:
 
-    $ bundle install
+To run the application, $ ruby bin/run
 
-Or install it yourself as:
+Usage of
+Development
+After checking out the repo, run bin/setup to install dependencies. You can also run bin/run for an interactive prompt that will allow you to experiment.
 
-    $ gem install cli_book_list
+To install this gem onto your local machine, run bundle exec rake install. To release a new version, update the version number in version.rb, and then run bundle exec rake release, which will create a git tag for the version, push git commits and tags, and push the .gem file to rubygems.org.
 
-## Usage
+Contributing
+Bug reports and pull requests are welcome on GitHub at https://github.com/chica25/CLI_BOOK_LIST
 
-TODO: Write usage instructions here
+License
+The gem is available as open source under the terms of the MIT License.
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/<github username>/cli_book_list.
+Code of Conduct
+Everyone interacting in the ProjectCli project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
