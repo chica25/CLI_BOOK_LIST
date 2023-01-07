@@ -2,23 +2,17 @@ require 'pry'
 
 class CLI 
    #user and data
-  
+
    def start
     puts "Welcome to Google Books!"
       sleep(1)
     API.get_books
-    print_book_titles
     book_list_user_input
+    print_book_titles
     book_selection
     selection
    end
-
-     #list of book titles
-     def print_book_titles
-      BookList.all.each.with_index(1) do |book, index|
-         puts "#{index}. #{book.title}"
-   end
-
+    
    def book_list_user_input
       #puts "Please  the list of books that are currently available to read:"
       puts "Plese enter 'y' to see the list of books, or 'exit' to leave the library!"
@@ -33,6 +27,12 @@ class CLI
          #give the user a goodbye message
          goodbye
       end
+   end
+
+    #list of book titles
+    def print_book_titles
+      BookList.all.each.with_index(1) do |book, index|
+         puts "#{index}. #{book.title}"
    end
 
    def invalid

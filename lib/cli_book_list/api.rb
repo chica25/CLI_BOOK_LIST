@@ -3,7 +3,6 @@ require 'pry'
 class API
     # binding.pry
     API_KEY = ENV['API_KEY']
-    # BASE_URL = "https://www.googleapis.com/books/v1/volumes?q=fantasy&key=#{API_KEY}"
     BASE_URL = "https://www.googleapis.com/books/v1/volumes?q=fantasy&maxResults=5&key=#{ENV['API_KEY']}"
     def self.get_books
         # binding.pry
