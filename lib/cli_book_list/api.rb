@@ -7,11 +7,8 @@ class API
     BASE_URL = "https://www.googleapis.com/books/v1/volumes?q=fantasy&maxResults=1&key=#{ENV['API_KEY']}"
 
     def self.get_books
-        #  binding.pry
         uri = URI.parse(BASE_URL)
         response = Net::HTTP.get_response(uri)
-        # puts response.body
-
         json = JSON.parse(response.body)
         json['items'].each do |book|
             id = book['id']
